@@ -1,0 +1,41 @@
+[gd_resource type="AnimationLibrary" format=3]
+
+[sub_resource type="Animation" id="Animation_dnkwe"]
+loop_mode = 1
+tracks/0/type = "rotation_3d"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("%GeneralSkeleton:RightUpperArm")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, 0.025158316, 0.7467308, -0.6645529, -0.011382494, 0.16, 1, 0.078637145, 0.7116671, -0.6961482, 0.05218792, 0.38, 1, -0.3580209, 0.77631253, -0.24949144, -0.45487788, 0.49, 1, -0.3580209, 0.77631253, -0.24949144, -0.45487788, 0.76, 1, 0.025158316, 0.7467308, -0.6645529, -0.011382494, 1, 1, 0.025158316, 0.7467308, -0.6645529, -0.011382494)
+tracks/1/type = "rotation_3d"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("%GeneralSkeleton:LeftUpperArm")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = PackedFloat32Array(0, 1, -0.19176227, 0.7287165, -0.6573224, 0.011258647, 0.16, 1, -0.15844637, 0.7629511, -0.624208, 0.056257285, 0.38, 1, -0.11388326, 0.8012679, -0.5761457, 0.114264905, 0.49, 1, -0.11388326, 0.8012679, -0.5761457, 0.114264905, 0.76, 1, -0.19176227, 0.7287165, -0.6573224, 0.011258647, 1, 1, -0.19176227, 0.7287165, -0.6573224, 0.011258647)
+
+[sub_resource type="Animation" id="Animation_k4njk"]
+loop_mode = 1
+tracks/0/type = "rotation_3d"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("%GeneralSkeleton:RightUpperArm")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, 0.025158316, 0.7467308, -0.6645529, -0.011382494, 0.16, 1, -0.016161203, 0.7690787, -0.6361035, -0.060242496, 0.38, 1, -0.0697127, 0.79190296, -0.594006, -0.1232346, 0.49, 1, -0.0697127, 0.79190296, -0.594006, -0.1232346, 0.76, 1, 0.025158316, 0.7467308, -0.6645529, -0.011382494, 1, 1, 0.025158316, 0.7467308, -0.6645529, -0.011382494)
+tracks/1/type = "rotation_3d"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("%GeneralSkeleton:LeftUpperArm")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = PackedFloat32Array(0, 1, -0.19176227, 0.7287165, -0.6573224, 0.011258647, 0.16, 1, -0.23349763, 0.6783553, -0.69503695, -0.04729411, 0.38, 1, 0.15726267, 0.87104845, -0.2013526, 0.4195237, 0.49, 1, 0.15726267, 0.87104845, -0.2013526, 0.4195237, 0.76, 1, -0.19176227, 0.7287165, -0.6573224, 0.011258647, 1, 1, -0.19176227, 0.7287165, -0.6573224, 0.011258647)
+
+[resource]
+_data = {
+&"left": SubResource("Animation_dnkwe"),
+&"right": SubResource("Animation_k4njk")
+}

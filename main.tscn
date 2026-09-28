@@ -1,0 +1,114 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://assets/trees/Simple Tree.glb" id="1_1bvp3"]
+[ext_resource type="PackedScene" path="res://assets/trees/Birch Tree.glb" id="2_lquwl"]
+[ext_resource type="PackedScene" path="res://GojoCharacter.tscn" id="3_7mycd"]
+[ext_resource type="Script" path="res://scripts/rigged_gojo.gd" id="4_272bh"]
+
+[sub_resource type="Environment" id="Environment_5vw27"]
+background_mode = 1
+background_color = Color(0.5568628, 0.7764706, 0.84705883, 1)
+ambient_light_source = 2
+ambient_light_color = Color(0.93333334, 0.9764706, 0.9882353, 1)
+ambient_light_energy = 0.6
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kek77"]
+albedo_color = Color(0.6039216, 0.46666667, 0.30980393, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_4c57u"]
+size = Vector3(23.4, 0.38, 14.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_efxa6"]
+albedo_color = Color(0.38431373, 0.6, 0.28235295, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_dg77c"]
+size = Vector3(22.35, 0.15, 12)
+
+[node name="GojoParkDemo" type="Node3D" unique_id=1903656935]
+
+[node name="BlueSky" type="WorldEnvironment" parent="." unique_id=1860378258]
+environment = SubResource("Environment_5vw27")
+
+[node name="Ground" type="Node3D" parent="." unique_id=59984851]
+
+[node name="SandBorder" type="MeshInstance3D" parent="Ground" unique_id=1280571266]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, -0.35)
+material_override = SubResource("StandardMaterial3D_kek77")
+mesh = SubResource("BoxMesh_4c57u")
+
+[node name="Grass" type="MeshInstance3D" parent="Ground" unique_id=209073458]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.13, 0.35)
+material_override = SubResource("StandardMaterial3D_efxa6")
+mesh = SubResource("BoxMesh_dg77c")
+
+[node name="Trees" type="Node3D" parent="." unique_id=252573379]
+
+[node name="LeftSimple" type="Node3D" parent="Trees" unique_id=135273061]
+transform = Transform3D(3.2629445, 0, -0.49314585, 0, 3.3, 0, 0.49314585, 0, 3.2629445, -9.5, 0, -3.15)
+
+[node name="Model" type="Node3D" parent="Trees/LeftSimple" unique_id=1282988214 instance=ExtResource("1_1bvp3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.25073, 0, 0.07515)
+
+[node name="LeftBirch" type="Node3D" parent="Trees" unique_id=815890382]
+transform = Transform3D(3.4434528, 0, 0.62660354, 0, 3.5, 0, -0.62660354, 0, 3.4434528, -5.65, 0, -3.8)
+
+[node name="Model" type="Node3D" parent="Trees/LeftBirch" unique_id=1296564120 instance=ExtResource("2_lquwl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.80423, 0, 0.0183)
+
+[node name="MiddleBirch" type="Node3D" parent="Trees" unique_id=356686631]
+transform = Transform3D(3.948909, 0, 0.63727283, 0, 4, 0, -0.63727283, 0, 3.948909, 1.3, 0, -4.25)
+
+[node name="Model" type="Node3D" parent="Trees/MiddleBirch" unique_id=41117675 instance=ExtResource("2_lquwl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.80423, 0, 0.0183)
+
+[node name="RightSimple" type="Node3D" parent="Trees" unique_id=1433681790]
+transform = Transform3D(3.584976, 0, -0.91539466, 0, 3.7, 0, 0.91539466, 0, 3.584976, 6.3, 0, -4)
+
+[node name="Model" type="Node3D" parent="Trees/RightSimple" unique_id=2010730803 instance=ExtResource("1_1bvp3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.25073, 0, 0.07515)
+
+[node name="RightBirch" type="Node3D" parent="Trees" unique_id=637985910]
+transform = Transform3D(3.016815, 0, 1.0671587, 0, 3.2, 0, -1.0671587, 0, 3.016815, 9.7, 0, -3.1)
+
+[node name="Model" type="Node3D" parent="Trees/RightBirch" unique_id=126345123 instance=ExtResource("2_lquwl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.80423, 0, 0.0183)
+
+[node name="Characters" type="Node3D" parent="." unique_id=659740718]
+
+[node name="Character1_Stand" type="Node3D" parent="Characters" unique_id=430697311 instance=ExtResource("3_7mycd")]
+transform = Transform3D(0.9887711, 0, -0.14943814, 0, 1, 0, 0.14943814, 0, 0.9887711, -5.65, 0.03, 0.65)
+script = ExtResource("4_272bh")
+
+[node name="Character2_Walk" type="Node3D" parent="Characters" unique_id=318373157 instance=ExtResource("3_7mycd")]
+transform = Transform3D(1.04, 0, 0, 0, 1.04, 0, 0, 0, 1.04, -2.65, 0.03, 0.55)
+script = ExtResource("4_272bh")
+animation_name = "walk"
+
+[node name="Character3_Run" type="Node3D" parent="Characters" unique_id=105277505 instance=ExtResource("3_7mycd")]
+transform = Transform3D(1.0780566, 0, 0.064761125, 0, 1.08, 0, -0.064761125, 0, 1.0780566, 0, 0.03, 1)
+script = ExtResource("4_272bh")
+animation_set = "Melee"
+animation_name = "LightRunning"
+
+[node name="Character4_PunchRight" type="Node3D" parent="Characters" unique_id=1148983371 instance=ExtResource("3_7mycd")]
+transform = Transform3D(0.99797976, 0, -0.25482607, 0, 1.03, 0, 0.25482607, 0, 0.99797976, 2.75, 0.03, 0.55)
+script = ExtResource("4_272bh")
+animation_set = "Punch"
+animation_name = "right"
+
+[node name="Character5_PunchLeft" type="Node3D" parent="Characters" unique_id=450601027 instance=ExtResource("3_7mycd")]
+transform = Transform3D(0.9800666, 0, 0.19866933, 0, 1, 0, -0.19866933, 0, 0.9800666, 5.65, 0.03, 0.55)
+script = ExtResource("4_272bh")
+animation_set = "Punch"
+animation_name = "left"
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1725894268]
+transform = Transform3D(1, 0, 0, 0, 0.9681268, 0.25046065, 0, -0.25046065, 0.9681268, 0, 4.75, 9.3)
+current = true
+fov = 61.0
+
+[node name="Sun" type="DirectionalLight3D" parent="." unique_id=451734101]
+transform = Transform3D(0.8480481, 0.381192, -0.36811286, 0, 0.6946584, 0.7193398, 0.52991927, -0.6100347, 0.58910376, 0, 0, 0)
+light_color = Color(1, 0.972549, 0.9098039, 1)
+light_energy = 0.8
+shadow_enabled = true

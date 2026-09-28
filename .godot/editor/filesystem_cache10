@@ -1,0 +1,36 @@
+78098b89c88a74ebe8c20117b8754620
+::res://::1790592134
+export_presets.cfg::TextFile::-1::1790592134::0::1::::<><><>0<>0<><>::
+Gojo Animation Demo.apple-touch-icon.png::CompressedTexture2D::8088604657173898807::1790592133::1790592182::1::::<><><>0<>0<>374a1c5726fc45d6350203340ae4f0af<>res://.godot/imported/Gojo Animation Demo.apple-touch-icon.png-47bbddf641cdf2d8977b6d6dae537584.ctex::
+Gojo Animation Demo.icon.png::CompressedTexture2D::4980174122139264::1790592133::1790592182::1::::<><><>0<>0<>c4ff679850324cd76b1ec3fab6348832<>res://.godot/imported/Gojo Animation Demo.icon.png-ec9f585dc152f99a087a661ee979946f.ctex::
+Gojo Animation Demo.png::CompressedTexture2D::3351933947956795605::1790592133::1790592182::1::::<><><>0<>0<>c35ef78050f46f8aa977fd3c240a64ed<>res://.godot/imported/Gojo Animation Demo.png-bfd687f248273d72dc49fbfc059cc8b9.ctex::
+GojoCharacter.tscn::PackedScene::-1::1790591745::0::1::::<><><>0<>0<><>::res://scripts/rigged_gojo.gd<>res://assets/gojo.png<>res://assets/animations/MeleeLib.res<>res://assets/animations/ShooterLib.res
+LegacyGojoCharacter.tscn::PackedScene::-1::1790589764::0::1::::<><><>0<>0<><>::res://scripts/avatar.gd
+main.tscn::PackedScene::-1::1790591572::0::1::::<><><>0<>0<><>::res://assets/trees/Simple Tree.glb<>res://assets/trees/Birch Tree.glb<>res://GojoCharacter.tscn<>res://scripts/rigged_gojo.gd
+Preview.png::CompressedTexture2D::4999127223604920534::1790591779::1790591865::1::::<><><>0<>0<>5ff242e3c71587713d57f353e3daa1a3<>res://.godot/imported/Preview.png-06a071281403101d77fdf26254295d0d.ctex::
+README.md::TextFile::-1::1790591689::0::1::::<><><>0<>0<><>::
+StudioDemo.tscn::PackedScene::-1::1790587268::0::1::::<><><>0<>0<><>::res://scripts/demo.gd
+StudioPreview.png::CompressedTexture2D::5532402488947167899::1790587527::1790588923::1::::<><><>0<>0<>5be32e278d772168e6b4a971aa154339<>res://.godot/imported/StudioPreview.png-d693b1c965a0204d9a5c3a05b4ff9157.ctex::
+::res://assets/::1790590170
+gojo.png::CompressedTexture2D::5707324813805394004::1772272536::1790590170::1::::<><><>0<>0<>0beec1328d90d5905f2bc3f1f9e290e8<>res://.godot/imported/gojo.png-2cecbc5993d9c303d990aa3b1a183236.s3tc.ctex::
+::res://assets/animations/::1790591579
+GojoPunch.tres::AnimationLibrary::-1::1790591745::0::1::::<><><>0<>0<><>::
+MeleeLib.res::AnimationLibrary::9141033643794102195::1790587047::0::1::::<><><>0<>0<><>::
+Mixamo BoneMap.tres::BoneMap::669624810488455992::1790589276::0::1::::<><><>0<>0<><>::
+ShooterLib.res::AnimationLibrary::6535101767165467404::1790589263::0::1::::<><><>0<>0<><>::
+::res://assets/trees/::1790588923
+Birch Tree.glb::PackedScene::5242919143644768596::1790588454::1790588546::1::::<><><>0<>0<>8d8a3fb3d157974d19224c9ff6f38233<>res://.godot/imported/Birch Tree.glb-99f568bbebf887d9e175bc671a780e2d.scn::uid://d32cexgfii1th::::res://assets/trees/Birch Tree_GradientPallete_64.png
+Birch Tree_GradientPallete_64.png::CompressedTexture2D::9180417667009069141::1790588546::1790588923::1::::<><><>0<>0<>018de697282534036584faa33e8bfdb8<>res://.godot/imported/Birch Tree_GradientPallete_64.png-7a6b840f5743494f3bba21db5fb827b3.s3tc.ctex::
+Pine Tree.glb::PackedScene::7432067419739554361::1790588454::1790588546::1::::<><><>0<>0<>83a4dec7f105d7319785b89fa4487854<>res://.godot/imported/Pine Tree.glb-0555f84612d9eb3e0eb8d12dab420276.scn::uid://c4sfvtrtjadg::::res://assets/trees/Pine Tree_GradientPallete_64.png
+Pine Tree_GradientPallete_64.png::CompressedTexture2D::201347610122902468::1790588546::1790588923::1::::<><><>0<>0<>59104302d6b236f122c3e4ea2176026a<>res://.godot/imported/Pine Tree_GradientPallete_64.png-4e5c63ac5b21bd02b8069a9c340cdb1f.s3tc.ctex::
+Simple Tree.glb::PackedScene::2808066445419262537::1790588454::1790588546::1::::<><><>0<>0<>610c13bf345c0938f7562854ad99da0f<>res://.godot/imported/Simple Tree.glb-d33a44e6c8ae3c1e9f389d6284c64726.scn::uid://de4fh5qta3k7p::::res://assets/trees/Simple Tree_GradientPallete_64.png
+Simple Tree_GradientPallete_64.png::CompressedTexture2D::7500202067302094007::1790588546::1790588923::1::::<><><>0<>0<>9e377d9cdeec78e5bdca439a45c84a45<>res://.godot/imported/Simple Tree_GradientPallete_64.png-f6e724b1389c74101c1d116f5eef1e9d.s3tc.ctex::
+Stylized Tree.glb::PackedScene::5817717584333082807::1790588454::1790588546::1::::<><><>0<>0<>b9b2177c92ecb51a1c87a55e1b78d693<>res://.godot/imported/Stylized Tree.glb-326c4e70f66d25890179049fff193dea.scn::uid://cw5gfh1yq7qm8::::res://assets/trees/Stylized Tree_GradientPallete_64.png
+Stylized Tree_GradientPallete_64.png::CompressedTexture2D::6379300899912305145::1790588546::1790588923::1::::<><><>0<>0<>ed152f2cb5970804410438c4547ec3b4<>res://.godot/imported/Stylized Tree_GradientPallete_64.png-06de64b0a3c98bd3f5dd0516e694d3a9.s3tc.ctex::
+::res://mixamo_upload/::1790587818
+gojo.obj::Mesh::2945846526562207125::1790587602::1790587816::1::::<><><>0<>0<>c51fd567a68f1c23ade4a3a2cf11463d<>res://.godot/imported/gojo.obj-194d2a439b032b0b5cc11e1a0663189a.mesh<*>res://.godot/imported/gojo.obj-194d2a439b032b0b5cc11e1a0663189a.mesh::uid://cxlbyt8kjlstd::::res://mixamo_upload/gojo.png
+gojo.png::CompressedTexture2D::6409997551791121977::1772272536::1790587818::1::::<><><>0<>0<>51f72dbf32c2ea68bbc1eafdb0c0a2fa<>res://.godot/imported/gojo.png-7660e6fe29bf656e43afc71cf986b9cd.s3tc.ctex::
+::res://scripts/::1790589769
+avatar.gd::GDScript::2084944013170364951::1790587461::0::1::::<>Node3D<><>0<>0<><>::
+demo.gd::GDScript::3234038875016560027::1790589764::0::1::::<>Node3D<><>0<>0<><>::
+rigged_gojo.gd::GDScript::956579566590796965::1790591572::0::1::::<>Node3D<><>0<>1<><>::
